@@ -1,0 +1,152 @@
+/* Login division */
+.loginDivision {
+    height: 100vh;
+    display: flex;
+}
+
+/* Left Section */
+.loginLeftBanner {
+    width: 50%;
+    height: 100vh;
+    background-image: url("./../../assets/images/login-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+}
+
+.loginLeftBanner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.loginLeftBannerTagline {
+    z-index: 2;
+    font-weight: 900 !important;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    color: var(--primary-white);
+}
+
+
+
+/* Right Section */
+.loginRightSection {
+    width: 50%;
+    height: 100vh;
+    padding: 3rem 5rem;
+}
+
+.loginContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.loginContentLoginForm {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginContentLoginFormHeader {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.loginContentLoginFormSubHeader {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.loginForm {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.loginRequirement {
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.loginRequirementHeader {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.loginRequirementInput {
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.75rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--primary-grey);
+    background-color: var(--dark-grey);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    outline: none;
+}
+
+.loginRequirementInput:focus {
+    background-color: var(--primary-white) !important;
+    border-color: var(--primary-yellow);
+    box-shadow: 0px 0px 5px rgba(33, 33, 33, 0.25);
+}
+
+.loginContentError {
+    visibility: visible;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary-red);
+}
+
+.loginButton {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 0.625rem;
+    background-color: var(--primary-yellow);
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    color: var(--primary-white);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.loginButton:hover {
+    box-shadow: 0px 0px 8px rgba(33, 33, 33, 0.75);
+}
+
+.loginContentAnchorContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginContentAnchor {
+    cursor: pointer;
+    color: var(--primary-black) !important;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.05s ease-in-out;
+}
+
+.loginContentAnchor:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
